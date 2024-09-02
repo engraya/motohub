@@ -25,10 +25,8 @@ async function ExploreCarsPage({ searchParams }: HomeProps) {
   return (
 <PagesContainer>
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div className="max-w-xl mx-auto text-center xl:max-w-xl">
-        <div className="text-center">
-         <p className="bg-gradient-to-r whitespace-nowra from-pink-500 to-green-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl">Explore Your Favourites</p>
-    </div>
+      <div className="max-w-xl mx-auto whitespace-nowrap text-center xl:max-w-xl">
+         <p className="bg-gradient-to-r whitespace-nowra from-pink-500 to-green-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">Explore Your Favourites</p>
        </div>
       <div className='home__filters'>
             <SearchBar />
