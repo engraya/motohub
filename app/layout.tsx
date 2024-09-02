@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import SiteFooter from "@/components/footer/site-footer";
 import NavigationBar from "@/components/navbar/NavigationBar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "ThankFul Art",
-  description: "Choose, Customize, and Download Thankful Art with Just a few clicks",
+  title: "Motohub",
+  description: "Your Ultimate Car Information Hub",
 };
 
 export default function RootLayout({
