@@ -27,7 +27,7 @@ async function ExploreCarsPage({ searchParams }: HomeProps) {
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
         <div className="text-center">
-         <p className="bg-gradient-to-r from-pink-500 to-green-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl">Explore Your Favourites</p>
+         <p className="bg-gradient-to-r whitespace-nowrap from-pink-500 to-green-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl">Explore Your Favourites</p>
     </div>
        </div>
       <div className='home__filters'>
