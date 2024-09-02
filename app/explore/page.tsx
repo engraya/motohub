@@ -26,10 +26,10 @@ async function ExploreCarsPage({ searchParams }: HomeProps) {
 <PagesContainer>
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
-        <h2 className="text-3xl font-bold leading-tight  bg-gradient-to-r from-pink-500 to-green-500 bg-clip-text text-gray-50 sm:text-4xl xl:text-5xl mb-6">Explore Your Favourites</h2>
-        <p className="mb-4">We are creating a tool that helps you be more productive and efficient when building
-          websites and webapps</p>
-      </div>
+        <div className="text-center">
+         <p className="bg-gradient-to-r from-pink-500 to-green-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl">Explore Your Favourites</p>
+    </div>
+       </div>
       <div className='home__filters'>
             <SearchBar />
             <CustomFilter title='Select Year' options={yearsOfProduction} />
