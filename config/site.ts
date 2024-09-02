@@ -1,10 +1,9 @@
-import { SiteConfig } from "@/types";
 
-export const siteConfig: SiteConfig = {
+export const siteConfig: any = {
   name: "Motohub",
   description:
     "© 2024 Motohub. All Rights Reserved.",
-  url: "https://github.com/engraya/thankful_art",
+  url: "https://github.com/engraya/motohub",
   ogImage: "",
   creator: {
     name: "RDS",
@@ -12,6 +11,6 @@ export const siteConfig: SiteConfig = {
   },
   keywords: ["nextjs", "next", "typescript", "tailwindcss"],
   links: {
-    github: "https://github.com/engraya/thankful_art",
+    github: "https://github.com/engraya/motohub",
   },
 };
