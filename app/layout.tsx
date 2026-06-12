@@ -1,26 +1,29 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavigationBar from "@/components/navbar/NavigationBar";
-import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import NavigationBar from "@/components/layout/NavigationBar";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Motohub",
-  description: "Your Ultimate Car Information Hub",
+  title: "CineHub — Your Ultimate Movie & TV Discovery Platform",
+  description:
+    "Discover and explore movies and TV shows with CineHub. Filter by genre, year, and rating — powered by TMDB.",
+  keywords: ["movies", "tv shows", "film", "tmdb", "nextjs", "discovery"],
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className="gradient leading-relaxed tracking-wide ">
-      <NavigationBar/>
-        <div className="flex min-h-screen flex-col">
-        {children}
-        </div>
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-[#FAFAFA] dark:bg-slate-900 text-gray-900 dark:text-slate-100 antialiased leading-relaxed">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <NavigationBar />
+          <main className="flex min-h-screen flex-col">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

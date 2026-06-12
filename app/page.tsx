@@ -1,12 +1,5 @@
-import PagesWrapper from '@/components/PagesWrapper'
-import React from 'react'
-import LandingPageComponent from '@/components/LandingPageComponent'
-function page() {
-  return (
-    <PagesWrapper>
-      <LandingPageComponent/>
-    </PagesWrapper>
-  )
-}
+import LandingPage from "@/components/landing/LandingPage";
 
-export default page
+export default function HomePage() {
+  return <LandingPage />;
+}
